@@ -1,3 +1,9 @@
+# PASSO 1: Você define o nome da sua aplicação aqui.
 spring:
   application:
     name: anime-service
+
+    # PASSO 2: Você usa essa propriedade para construir o caminho de contexto.
+server:
+  servlet:
+    context-path: /${spring.application.name}
